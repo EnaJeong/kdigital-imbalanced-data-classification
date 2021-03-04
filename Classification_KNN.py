@@ -21,16 +21,16 @@ pd.set_option("display.max_columns", None)
 
 # In[9]:
 
-with open(f"./samples/X_samples.pickle", "rb") as f:
+with open(f"./datasets/X_samples.pickle", "rb") as f:
     X_samples = pickle.load(f)
     
-with open(f"./samples/y_samples.pickle", "rb") as f:
+with open(f"./datasets/y_samples.pickle", "rb") as f:
     y_samples = pickle.load(f)
     
-with open(f"./samples/X_test.pickle", "rb") as f:
+with open(f"./datasets/X_test.pickle", "rb") as f:
     X_test = pickle.load(f)
     
-with open(f"./samples/y_test.pickle", "rb") as f:
+with open(f"./datasets/y_test.pickle", "rb") as f:
     y_test = pickle.load(f)
 
 
@@ -50,8 +50,8 @@ cols = ['Accuracy', 'Precision', 'Recall', 'F1-Score', 'ROC_AUC']
 
 # In[ ]:
 
-print(X_samples.get(data_list[0]))
-print(y_samples.get(data_list[0]))
+# print(X_samples.get(data_list[0]))
+# print(y_samples.get(data_list[0]))
 
 
 # # KNN
@@ -177,7 +177,8 @@ for class_weight in class_weights:
     print('Raw')
     show_data_info(y)
     
-    clf = KNeighborsClassifier(n_neighbors = 5,n_jobs=-1)
+#     clf = KNeighborsClassifier(n_neighbors = 5,n_jobs=-1)
+    clf = KNeighborsClassifier(n_neighbors = 5)
     clf.fit(X, y)
     print("classifier created")
 
