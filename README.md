@@ -31,7 +31,7 @@
 
 ### 추가 스터디
 1. PCA (주성분 분석)
-2. Scailing
+2. Scaling
   - `MinMaxScaler`
   - `StandardScaler`
   - `RobustScaler`
