@@ -21,16 +21,16 @@ pd.set_option("display.max_columns", None)
 
 # In[9]:
 
-with open(f"./samples/X_samples.pickle", "rb") as f:
+with open(f"./datasets/X_samples.pickle", "rb") as f:
     X_samples = pickle.load(f)
     
-with open(f"./samples/y_samples.pickle", "rb") as f:
+with open(f"./datasets/y_samples.pickle", "rb") as f:
     y_samples = pickle.load(f)
     
-with open(f"./samples/X_test.pickle", "rb") as f:
+with open(f"./datasets/X_test.pickle", "rb") as f:
     X_test = pickle.load(f)
     
-with open(f"./samples/y_test.pickle", "rb") as f:
+with open(f"./datasets/y_test.pickle", "rb") as f:
     y_test = pickle.load(f)
 
 
