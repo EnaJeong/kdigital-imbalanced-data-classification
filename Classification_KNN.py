@@ -70,7 +70,7 @@ for i in data_list:
     data_dict[i] = [acc, precision, recall, f1, roc_auc]
 
 
-df_knn = pd.Dataframe(data_dict, index = cols)
+df_knn = pd.DataFrame(data_dict, index = cols)
 print(df_knn)
 
 
